@@ -19,6 +19,28 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),kenzo)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := QPerformance
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/QPerformance.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqti_performance
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES_64 := proprietary/lib64/libqti_performance.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libqti_performance.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_api_v02
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/lib64/libloc_api_v02.so
