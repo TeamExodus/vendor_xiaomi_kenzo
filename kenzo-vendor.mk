@@ -859,10 +859,10 @@ PRODUCT_PACKAGES += \
     CNEService \
     com.qualcomm.location \
     qcrilmsgtunnel \
+    QPerformance \
+    libqti_performance \
     colorservice \
     ims \
     imssettings \
     qcnvitems \
-    qcrilhook \
-    QPerformance \
-    libqti_performance \
+    qcrilhook
