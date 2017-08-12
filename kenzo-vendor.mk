@@ -82,6 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/xiaomi/kenzo/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/kenzo/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    vendor/xiaomi/kenzo/proprietary/etc/permissions/com.qualcomm.qti.Performance.xml:/system/etc/permissions/com.qualcomm.qti.Performance.xml \
     vendor/xiaomi/kenzo/proprietary/etc/pp_calib_data_sharp_r63315_1080p_video_mode_dsi_panel.xml:system/etc/pp_calib_data_sharp_r63315_1080p_video_mode_dsi_panel.xml \
     vendor/xiaomi/kenzo/proprietary/lib/hw/fingerprint.fpc.so:system/lib/hw/fingerprint.fpc.so \
     vendor/xiaomi/kenzo/proprietary/lib/libRecoFace.so:system/lib/libRecoFace.so \
@@ -558,6 +559,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/xiaomi/kenzo/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
+#PRODUCT_COPY_FILES += \
+#    vendor/xiaomi/kenzo/proprietary/vendor/lib/libqti_performance.so:/system/vendor/lib/libqti_performance.so \
+#    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libqti_performance.so:/system/vendor/lib64/libqti_performance.so \
+
 PRODUCT_PACKAGES += \
     libts_detected_face_hal \
     libts_face_beautify_hal \
@@ -566,4 +571,6 @@ PRODUCT_PACKAGES += \
     shutdownlistener \
     qcrilmsgtunnel \
     qcnvitems \
-    qcrilhook
+    qcrilhook \
+
+#    QPerformance \
